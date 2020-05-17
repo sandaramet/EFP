@@ -1,13 +1,25 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-import { HomePage } from './home.page';
+import { HomePage } from "./home.page";
+import { SignupComponent } from "src/app/pages/home/signup/signup.component";
+import { LoginComponent } from "src/app/pages/home/login/login.component";
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomePage
-  }
+    path: "",
+    component: HomePage,
+    children: [
+      {
+        path: "",
+        component: SignupComponent,
+      },
+      {
+        path: "login",
+        component: LoginComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({
