@@ -1,0 +1,12 @@
+<app-header title="EFP">
+  <ion-button fill="clear" routerLink="/home/login"  routerLinkActive="ion-hide" >
+    Log In
+  </ion-button>
+  <ion-button fill="clear" routerLink="/home/" routerLinkActive="ion-hide" [routerLinkActiveOptions]="{exact:
+    true}"> 
+    Sign Up
+  </ion-button>
+</app-header>
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

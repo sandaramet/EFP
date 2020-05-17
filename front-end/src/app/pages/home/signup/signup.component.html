@@ -1,27 +1,34 @@
 <ion-grid>
   <ion-row>
     <ion-col size="12">
-      <form class="ion-padding">
+      <form class="ion-padding" >
         <ion-item>
           <ion-label position="floating">Username</ion-label>
-          <ion-input required type="text"></ion-input>
+          <ion-input required type="text"   [(ngModel)]="user.username"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">E-Mail </ion-label>
-          <ion-input required type="text"></ion-input>
+          <ion-input required type="text" [(ngModel)]="user.email"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Password </ion-label>
-          <ion-input required type="password"></ion-input>
+          <ion-input
+            required
+            type="password"
+            [(ngModel)]="user.password"
+          ></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Confirm Password </ion-label>
-          <ion-input required type="password"></ion-input>
+          <ion-input
+            required
+            type="password"
+            [(ngModel)]="user.confirmPassword"
+          ></ion-input>
         </ion-item>
 
         <ion-button
           color="primary"
-          type="submit"
           class="ion-margin-vertical"
           (click)="onSubmit()"
         >
