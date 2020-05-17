@@ -3,6 +3,10 @@
     <ion-col size="12">
       <form class="ion-padding">
         <ion-item>
+          <ion-label position="floating">Username</ion-label>
+          <ion-input required type="text"></ion-input>
+        </ion-item>
+        <ion-item>
           <ion-label position="floating">E-Mail </ion-label>
           <ion-input required type="text"></ion-input>
         </ion-item>
@@ -20,7 +24,6 @@
           type="submit"
           class="ion-margin-vertical"
           (click)="onSubmit()"
-         
         >
           Sign Up
         </ion-button>
