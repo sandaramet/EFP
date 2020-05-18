@@ -2,7 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { AuthService } from "src/app/serivces/auth.service";
 import { NewUser } from "src/app/models/NewUser.model";
-// import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: "app-signup",
@@ -11,7 +10,6 @@ import { NewUser } from "src/app/models/NewUser.model";
 })
 export class SignupComponent implements OnInit {
   constructor(private router: Router, private auth: AuthService) {}
-  t:string
   user: NewUser = {
     email: "",
     username: "",
