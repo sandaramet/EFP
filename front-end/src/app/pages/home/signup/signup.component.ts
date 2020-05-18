@@ -10,14 +10,14 @@ import { NewUser } from "src/app/models/NewUser.model";
 })
 export class SignupComponent implements OnInit {
   constructor(private router: Router, private auth: AuthService) {}
-  user: NewUser = {
+  newUser: NewUser = {
     email: "",
     username: "",
     password: "",
     confirmPassword: "",
   };
   onSubmit() {
-    this.auth.registerNewUser(this.user);
+    this.auth.registerNewUser(this.newUser);
     this.router.navigateByUrl("/home/login");
   }
   ngOnInit() {}
