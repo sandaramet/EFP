@@ -1,13 +1,20 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-import { AdminPage } from './admin.page';
+import { AdminPage } from "./admin.page";
+import { LoginComponent } from "src/app/components/login/login.component";
 
 const routes: Routes = [
   {
-    path: '',
-    component: AdminPage
-  }
+    path: "",
+    component: AdminPage,
+    children: [
+      {
+        path: "",
+        component: LoginComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({
