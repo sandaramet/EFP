@@ -9,6 +9,7 @@ import { AdminPageRoutingModule } from "./admin-routing.module";
 import { AdminPage } from "./admin.page";
 import { ComponentsModule } from "src/app/components/components.module";
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { AddWordCardComponent } from './dashboard/add-word-card/add-word-card.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
     ComponentsModule,
   ],
 
-  declarations: [AdminPage, DashboardComponent],
+  declarations: [AdminPage, DashboardComponent,AddWordCardComponent],
 })
 export class AdminPageModule {}
