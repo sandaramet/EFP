@@ -8,8 +8,8 @@ import { HomePageRoutingModule } from "./home-routing.module";
 
 import { HomePage } from "./home.page";
 import { ComponentsModule } from "src/app/components/components.module";
-import { SignupComponent } from "./signup/signup.component";
-import { LoginComponent } from "./login/login.component";
+import { SignupComponent } from "../../components/signup/signup.component";
+import { LoginComponent } from "../../components/login/login.component";
 
 @NgModule({
   imports: [
