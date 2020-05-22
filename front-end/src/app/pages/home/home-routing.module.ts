@@ -16,13 +16,14 @@ const routes: Routes = [
         component: FeedComponent,
       },
       {
-        path: "signup",
-        component: SignupComponent,
-      },
-      {
         path: "login",
         component: LoginComponent,
       },
+      {
+        path: "signup",
+        component: SignupComponent,
+      },
+     
     ],
   },
 ];
