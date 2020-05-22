@@ -1,12 +1,12 @@
 <div class="ion-padding-vertical">
   <ion-label>
-    <ion-button fill="clear">
-      Add New Word Card
-    </ion-button>
-  </ion-label>
-  <ion-label>
-    <ion-button fill="clear">
+    <ion-button fill="clear" routerLink="/admin/dashboard/"  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">
       All Word Cards
     </ion-button>
   </ion-label>
-</div>
+  <ion-label>
+    <ion-button fill="clear" routerLink="/admin/dashboard/add-word-card" routerLinkActive="active">
+      Add New Word Card
+    </ion-button>
+  </ion-label>
+  </div>

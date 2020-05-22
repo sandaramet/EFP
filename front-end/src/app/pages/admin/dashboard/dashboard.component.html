@@ -1,10 +1,12 @@
-<ion-grid class="ion-no-padding ion-no-margin" >
+<ion-grid class="ion-no-padding ion-no-margin">
   <ion-row>
-    <ion-col size="3" color="primary" class="ion-no-padding">
+    <ion-col size-md="3" color="primary" class="ion-no-padding">
       <app-sidebar></app-sidebar>
     </ion-col>
-    <ion-col size="9"  >
-      <app-add-word-card></app-add-word-card>
+    <ion-col size-md="8" class="ion-margin ion-padding">
+      <ion-router-outlet></ion-router-outlet>
+      <!-- <app-words-table></app-words-table> -->
+      <!-- <app-add-word-card></app-add-word-card> -->
     </ion-col>
   </ion-row>
 </ion-grid>
