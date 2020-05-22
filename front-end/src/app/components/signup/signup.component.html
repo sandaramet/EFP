@@ -5,11 +5,11 @@
       <form class="ion-padding" >
         <ion-item>
           <ion-label position="floating">Username</ion-label>
-          <ion-input required type="text"  name="username"  [(ngModel)]="newUser.username"></ion-input>
+          <ion-input required type="text" ngDefaultControl name="username"  [(ngModel)]="newUser.username"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">E-Mail </ion-label>
-          <ion-input required type="text" name="email" [(ngModel)]="newUser.email"></ion-input>
+          <ion-input required type="text" ngDefaultControl name="email" [(ngModel)]="newUser.email"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Password </ion-label>
@@ -17,6 +17,7 @@
             required
             type="password"
             name="password"
+            ngDefaultControl
             [(ngModel)]="newUser.password"
           ></ion-input>
         </ion-item>
@@ -26,6 +27,7 @@
             required
             type="password"
             name="confirmPassword"
+            ngDefaultControl
             [(ngModel)]="newUser.confirmPassword"
           ></ion-input>
         </ion-item>
