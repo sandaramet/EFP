@@ -12,11 +12,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
 import { AuthGuardService } from './guards/auth-guard.service';
 import { AuthService } from './serivces/auth.service';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot({animated: false}), AppRoutingModule,ComponentsModule,FormsModule],
+  imports: [BrowserModule, IonicModule.forRoot({animated: false}), AppRoutingModule,ComponentsModule,FormsModule, NoopAnimationsModule],
   providers: [
     StatusBar,
     SplashScreen,
