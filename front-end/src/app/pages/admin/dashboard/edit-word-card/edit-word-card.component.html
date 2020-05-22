@@ -1,0 +1,50 @@
+<!-- <p>Id : {{ id }}</p> -->
+<form class="ion-padding">
+  <ion-item>
+    <ion-input
+      required
+      type="text"
+      name="english"
+      placeholder="English"
+      value="English"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea
+      rows="9"
+      cols="20"
+      placeholder="English Meaning"
+      name="englishMeaning"
+      value="English Meaning"
+    ></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      required
+      type="text"
+      name="native"
+      placeholder="Native"
+      value="Native"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea
+      required
+      rows="9"
+      cols="20"
+      placeholder="Native Meaning"
+      name="nativeMeaning"
+      value="Native Meaning"
+    ></ion-textarea>
+  </ion-item>
+  <ion-button
+    block
+    color="success"
+    type="submit"
+    class=""
+    class="ion-margin-vertical"
+    (click)="update()"
+  >
+    Update Word Card
+  </ion-button>
+</form>
