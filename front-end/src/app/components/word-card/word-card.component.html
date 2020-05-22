@@ -1,38 +1,24 @@
 <ion-card>
   <ion-item>
-    <ion-label>English</ion-label>
+    <ion-label>{{ cardData.english }}</ion-label>
   </ion-item>
 
   <ion-card-content>
-    <ul>
+    <ul *ngFor="let meaning of cardData.englishMeaning">
       <li>
-        This is content, without any paragraph or header tags, within an
-        ion-card-content element.
-      </li>
-      <li>
-        This is content, without any paragraph or header tags, within an
-        ion-card-content element.
-      </li>
-      <li>
-        This is content, without any paragraph or header tags, within an
-        ion-card-content element.
+        {{ meaning }}
       </li>
     </ul>
   </ion-card-content>
   <ion-item>
-    <ion-label>Native</ion-label>
+    <ion-label>{{ cardData.native }}</ion-label>
   </ion-item>
 
   <ion-card-content>
-    <ul>
-      <li>
-        This is content, without any paragraph or header tags, within an
-        ion-card-content element.
-      </li>
-      <li>
-        This is content, without any paragraph or header tags, within an
-        ion-card-content element.
-      </li>
-    </ul>
+      <ul *ngFor="let meangin of cardData.nativeMeangin">
+        <li>
+          {{ meangin }}
+        </li>
+      </ul>
   </ion-card-content>
 </ion-card>
