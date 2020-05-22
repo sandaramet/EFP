@@ -5,6 +5,8 @@ import { LoginComponent } from "./login/login.component";
 import { SignupComponent } from "./signup/signup.component";
 import { FeedComponent } from "./feed/feed.component";
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule, FormGroupDirective } from '@angular/forms';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,7 +22,7 @@ import { CommonModule } from '@angular/common';
     SignupComponent,
     FeedComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule,ReactiveFormsModule,RouterModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ComponentsModule {}
