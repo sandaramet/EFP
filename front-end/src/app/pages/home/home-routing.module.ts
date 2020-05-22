@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomePage } from "./home.page";
 import { SignupComponent } from "src/app/components/signup/signup.component";
 import { LoginComponent } from "src/app/components/login/login.component";
+import { WordCardComponent } from 'src/app/components/word-card/word-card.component';
 import { FeedComponent } from '../../components/feed/feed.component';
 
 const routes: Routes = [
@@ -16,14 +17,13 @@ const routes: Routes = [
         component: FeedComponent,
       },
       {
-        path: "login",
-        component: LoginComponent,
-      },
-      {
         path: "signup",
         component: SignupComponent,
       },
-     
+      {
+        path: "login",
+        component: LoginComponent,
+      },
     ],
   },
 ];
