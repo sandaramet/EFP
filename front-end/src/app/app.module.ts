@@ -17,7 +17,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot({animated: false}), AppRoutingModule,ComponentsModule,FormsModule, NoopAnimationsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,ComponentsModule,FormsModule, NoopAnimationsModule],
   providers: [
     StatusBar,
     SplashScreen,
