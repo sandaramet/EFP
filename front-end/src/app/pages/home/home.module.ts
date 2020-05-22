@@ -8,8 +8,6 @@ import { HomePageRoutingModule } from "./home-routing.module";
 
 import { HomePage } from "./home.page";
 import { ComponentsModule } from "src/app/components/components.module";
-import { SignupComponent } from "../../components/signup/signup.component";
-import { LoginComponent } from "../../components/login/login.component";
 
 @NgModule({
   imports: [
@@ -20,6 +18,6 @@ import { LoginComponent } from "../../components/login/login.component";
     FormsModule,
     ReactiveFormsModule,
   ],
-  declarations: [HomePage, SignupComponent, LoginComponent],
+  declarations: [HomePage],
 })
 export class HomePageModule {}
